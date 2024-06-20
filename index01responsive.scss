@@ -1,0 +1,246 @@
+/* 반응형 */
+@media (max-width: 768px){
+
+    *{
+        font-size: 16px;
+    }
+    // .container header .logo img{
+    //     width: 120px;
+    // }
+    // .container header{
+    //     padding: 0 20px;
+    // }
+    // .container .welcome{
+    //     height: 100vh;
+    // }
+    // .container .welcome .heading{
+
+    // }
+    .container{
+
+        header{
+            padding: 0 20px;
+            .logo{
+
+                img{
+                    width: 120px;
+                }
+            }
+        }
+        section{
+            padding: 20px;
+        }
+        .welcome{
+            height: 100vh;
+
+            .heading{
+                width: 100%;
+                // border: 1px solid #fff;
+                h1{
+                    font-size: 35px;
+                }
+                h5{
+                    font-size: 20px;
+                }
+                p{
+                    padding: 0 40px;
+                    font-size: 18px;
+                }
+                .getstarted{
+                    display: inline-block;
+                    // width: 80%;
+                    input[type=email]{
+                        display: inline-block;
+                        width: 90%;
+                        margin-bottom: 10px;
+                        padding: 20px 0;
+                        padding-left: 20px;
+                    }
+                    button{
+                        width: 90%;
+                        padding: 10px 20px;
+                        i{
+                            top: 10px;
+                        }
+                    }
+                    span{
+                        top: 20px;
+                        left: 40px;
+                    }
+                }
+            }
+        }
+        :is(.enjoy,.download,.watch,.create){
+            height: auto;
+            .inner{
+                width: 100%;
+                position: static;
+                transform: translate(0);
+                .desc,
+                .preview{
+                    float: none;
+                    width: 100%;
+                    text-align: center;
+                }
+                .desc{
+                    // border: 1px solid #fff;
+                    width: inherit;
+                    text-align: center;
+                    padding: 10px 20px;
+                    padding-top: 60px;
+                    float: none;
+                    height: 200px;
+                    z-index: 10;
+                    h1{
+                        font-size: 28px;
+                        font-weight: 600;
+                        padding-top: 0;
+                    }
+                    p{
+                        font-size: 16px;
+                        padding-top: 15px;
+                    }
+                }
+                .preview{
+                    // border: 1px solid #fff;
+                    width: inherit;
+                    text-align: center;
+                    float: none;
+                    margin-bottom: 30px;
+                    // position: fixed;
+                    img{
+                        width: 100%;
+                        height: auto;
+                        // height: 250px;
+                        // border: 1px solid #fff;
+                    }
+                }
+            }
+        }
+        /* Change Order */
+        .download,
+        .create{
+
+            .inner{
+                // border: 1px solid #fff;
+                display: flex;
+                flex-direction: column;
+                .desc{
+                    order: 1;
+                    margin-bottom: 15px;
+                    
+                }
+                .preview{
+                    order: 2;
+                }
+            }
+        }
+        .faq{
+            padding: 80px 20px;
+            .faq-inner{
+                width: 100%;
+                h1{
+                    padding-top: 20px;
+                    font-size: 30px;
+                    line-height: 1.3em;
+                    font-weight: 600;
+                }
+                .accordion{
+
+                    label{
+
+                    }
+                    .faq-content{
+
+                    }
+                    input[name=faq-item]{
+
+                    }
+                }
+                aside{
+                    // border: 1px solid #fff;
+                    width: 100%;
+                    p{
+                        // border: 1px solid #fff;
+                        font-size: 23px;
+                    }
+                    .getstarted{
+                        display: inline-block;
+                        text-align: center;
+                        input[type=email]{
+                            display: inline-block;
+                            width: 100%;
+                            margin-bottom: 10px;
+                            padding: 20px 0;
+                            padding-left: 20px;
+                        }
+                        button{
+                            width: 100%;
+                            padding: 10px 20px;
+                            i{
+                                top: 10px;
+                            }
+                        }
+                        span{
+                            top: 20px;
+                            left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+
+            .footer-inner{
+                width: 100%;
+                text-align: center;
+                
+                .site-map{
+                    // border: 1px solid #fff;
+                    h6{
+
+                    }
+                    .link{
+                        width: 90%;
+                        margin: auto;
+                        display: inline-block;
+                        // border: 1px solid #fff;
+                        .items{
+                            width: 48%;
+                            display: inline-block;
+                            margin-bottom: 20px;
+                            // border: 1px solid #fff;
+                            a{
+                                font-size: 14px;
+                            }
+                            &:last-child{
+                                // padding-bottom: 20px;
+                                // border: 1px solid #fff;
+                                a{
+                                    &:last-child{
+                                        color: #000;
+                                        pointer-events: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .copyright{
+                    text-align: center;
+                    padding: 15px;
+                }
+            }
+        }
+        .modal-login{
+
+            .login{
+                width: 100%;
+                padding: 20px;
+                h1{
+
+                }
+            }
+        }
+    }
+}
